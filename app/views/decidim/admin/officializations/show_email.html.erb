@@ -1,0 +1,6 @@
+<%= link_to user.email, "mailto:#{user.email}" %>
+<script>
+  $("#hidden-phone-number").hide();
+  $("#phone_number").html("<%= user.phone_number %>")
+  $("#show-email-modal button[data-open=user_email]").hide()
+</script>
